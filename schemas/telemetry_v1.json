@@ -1,0 +1,95 @@
+{
+  "schema": "telemetry.record",
+  "version": 1,
+  "description": "Telemetry frame directory for the BER subset. Field tags deliberately include a base-128 long tag and both explicit and implicit wrapping.",
+  "root": {
+    "name": "TelemetryRecord",
+    "tag": {"class": "universal", "number": 16},
+    "type": "SEQUENCE",
+    "fields": [
+      {
+        "name": "station_id",
+        "tag": {"class": "context", "number": 0},
+        "mode": "implicit",
+        "type": "INTEGER"
+      },
+      {
+        "name": "flags",
+        "tag": {"class": "context", "number": 1},
+        "mode": "implicit",
+        "type": "OCTET STRING",
+        "optional": true
+      },
+      {
+        "name": "observed_at",
+        "tag": {"class": "application", "number": 300},
+        "mode": "implicit",
+        "type": "INTEGER"
+      },
+      {
+        "name": "note",
+        "tag": {"class": "context", "number": 2},
+        "mode": "explicit",
+        "type": "NULL",
+        "optional": true
+      },
+      {
+        "name": "raw",
+        "tag": {"class": "context", "number": 3},
+        "mode": "explicit",
+        "type": "OCTET STRING",
+        "optional": true
+      },
+      {
+        "name": "sensor",
+        "tag": {"class": "application", "number": 1000},
+        "mode": "implicit",
+        "type": "SEQUENCE",
+        "fields": [
+          {
+            "name": "kind",
+            "tag": {"class": "private", "number": 0},
+            "mode": "implicit",
+            "type": "INTEGER"
+          },
+          {
+            "name": "label",
+            "tag": {"class": "private", "number": 1},
+            "mode": "implicit",
+            "type": "OCTET STRING",
+            "optional": true
+          },
+          {
+            "name": "quality",
+            "tag": {"class": "private", "number": 2},
+            "mode": "explicit",
+            "type": "INTEGER",
+            "optional": true
+          },
+          {
+            "name": "calibration",
+            "tag": {"class": "private", "number": 3},
+            "mode": "explicit",
+            "type": "SEQUENCE",
+            "optional": true,
+            "fields": [
+              {
+                "name": "offset",
+                "tag": {"class": "context", "number": 10},
+                "mode": "implicit",
+                "type": "INTEGER"
+              },
+              {
+                "name": "valid",
+                "tag": {"class": "context", "number": 11},
+                "mode": "implicit",
+                "type": "NULL",
+                "optional": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

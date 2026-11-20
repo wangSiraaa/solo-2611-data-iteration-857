@@ -1,0 +1,346 @@
+{
+  "product_id": "1aec72422754b67ffdcf73d410af535efc1fad29dfdff098be080d0e95fcf3d2",
+  "schema": "telemetry.record",
+  "schema_version": 1,
+  "stream_bytes": 165,
+  "import": {
+    "import_id": 1,
+    "product_id": "1aec72422754b67ffdcf73d410af535efc1fad29dfdff098be080d0e95fcf3d2",
+    "status": "complete",
+    "record_count": 4,
+    "byte_count": 165,
+    "error_code": null,
+    "error_offset": null,
+    "error_record_start": null
+  },
+  "record_count": 4,
+  "presence": {
+    "0": {
+      "flags": true,
+      "note": true,
+      "observed_at": true,
+      "raw": true,
+      "sensor": true,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": true,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": true,
+      "station_id": true
+    },
+    "1": {
+      "flags": false,
+      "note": false,
+      "observed_at": true,
+      "raw": true,
+      "sensor": true,
+      "sensor.calibration": false,
+      "sensor.calibration.offset": false,
+      "sensor.calibration.valid": false,
+      "sensor.kind": true,
+      "sensor.label": false,
+      "sensor.quality": false,
+      "station_id": true
+    },
+    "2": {
+      "flags": true,
+      "note": false,
+      "observed_at": true,
+      "raw": true,
+      "sensor": true,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": false,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": true,
+      "station_id": true
+    },
+    "3": {
+      "flags": false,
+      "note": true,
+      "observed_at": true,
+      "raw": false,
+      "sensor": true,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": true,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": false,
+      "station_id": true
+    }
+  },
+  "expected_presence": [
+    {
+      "station_id": true,
+      "flags": true,
+      "observed_at": true,
+      "note": true,
+      "raw": true,
+      "sensor": true,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": true,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": true
+    },
+    {
+      "station_id": true,
+      "flags": false,
+      "observed_at": true,
+      "note": false,
+      "raw": true,
+      "sensor": true,
+      "sensor.kind": true,
+      "sensor.label": false,
+      "sensor.quality": false,
+      "sensor.calibration": false,
+      "sensor.calibration.offset": false,
+      "sensor.calibration.valid": false
+    },
+    {
+      "station_id": true,
+      "flags": true,
+      "observed_at": true,
+      "note": false,
+      "raw": true,
+      "sensor": true,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": true,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": false
+    },
+    {
+      "station_id": true,
+      "flags": false,
+      "observed_at": true,
+      "note": true,
+      "raw": false,
+      "sensor": true,
+      "sensor.kind": true,
+      "sensor.label": true,
+      "sensor.quality": false,
+      "sensor.calibration": true,
+      "sensor.calibration.offset": true,
+      "sensor.calibration.valid": true
+    }
+  ],
+  "presence_matches": true
+}
+
+match table (wire tags per SEQUENCE scope):
+{
+  "$root": [
+    {
+      "ordinal": 0,
+      "name": "station_id",
+      "wire_tag": [
+        "context",
+        false,
+        0
+      ],
+      "mode": "implicit",
+      "type": "INTEGER",
+      "optional": false,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 1,
+      "name": "flags",
+      "wire_tag": [
+        "context",
+        false,
+        1
+      ],
+      "mode": "implicit",
+      "type": "OCTET STRING",
+      "optional": true,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 2,
+      "name": "observed_at",
+      "wire_tag": [
+        "application",
+        false,
+        300
+      ],
+      "mode": "implicit",
+      "type": "INTEGER",
+      "optional": false,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 3,
+      "name": "note",
+      "wire_tag": [
+        "context",
+        true,
+        2
+      ],
+      "mode": "explicit",
+      "type": "NULL",
+      "optional": true,
+      "inner_tag": [
+        "universal",
+        false,
+        5
+      ]
+    },
+    {
+      "ordinal": 4,
+      "name": "raw",
+      "wire_tag": [
+        "context",
+        true,
+        3
+      ],
+      "mode": "explicit",
+      "type": "OCTET STRING",
+      "optional": true,
+      "inner_tag": [
+        "universal",
+        false,
+        4
+      ]
+    },
+    {
+      "ordinal": 5,
+      "name": "sensor",
+      "wire_tag": [
+        "application",
+        true,
+        1000
+      ],
+      "mode": "implicit",
+      "type": "SEQUENCE",
+      "optional": false,
+      "inner_tag": null
+    }
+  ],
+  "sensor": [
+    {
+      "ordinal": 0,
+      "name": "kind",
+      "wire_tag": [
+        "private",
+        false,
+        0
+      ],
+      "mode": "implicit",
+      "type": "INTEGER",
+      "optional": false,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 1,
+      "name": "label",
+      "wire_tag": [
+        "private",
+        false,
+        1
+      ],
+      "mode": "implicit",
+      "type": "OCTET STRING",
+      "optional": true,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 2,
+      "name": "quality",
+      "wire_tag": [
+        "private",
+        true,
+        2
+      ],
+      "mode": "explicit",
+      "type": "INTEGER",
+      "optional": true,
+      "inner_tag": [
+        "universal",
+        false,
+        2
+      ]
+    },
+    {
+      "ordinal": 3,
+      "name": "calibration",
+      "wire_tag": [
+        "private",
+        true,
+        3
+      ],
+      "mode": "explicit",
+      "type": "SEQUENCE",
+      "optional": true,
+      "inner_tag": [
+        "universal",
+        true,
+        16
+      ]
+    }
+  ],
+  "sensor.calibration": [
+    {
+      "ordinal": 0,
+      "name": "offset",
+      "wire_tag": [
+        "context",
+        false,
+        10
+      ],
+      "mode": "implicit",
+      "type": "INTEGER",
+      "optional": false,
+      "inner_tag": null
+    },
+    {
+      "ordinal": 1,
+      "name": "valid",
+      "wire_tag": [
+        "context",
+        false,
+        11
+      ],
+      "mode": "implicit",
+      "type": "NULL",
+      "optional": true,
+      "inner_tag": null
+    }
+  ]
+}
+
+first 12 relation rows:
+{"record_ordinal": 0, "record_start": 0, "path": "flags", "type": "OCTET STRING", "mode": "implicit", "present": 1, "is_null": 0, "int_value": null, "bytes_value": "b'\\x00\\x00'", "start_offset": 5, "end_offset": 9, "body_start": 7, "body_end": 9}
+{"record_ordinal": 0, "record_start": 0, "path": "note", "type": "NULL", "mode": "explicit", "present": 1, "is_null": 1, "int_value": null, "bytes_value": null, "start_offset": 14, "end_offset": 18, "body_start": null, "body_end": null}
+{"record_ordinal": 0, "record_start": 0, "path": "observed_at", "type": "INTEGER", "mode": "implicit", "present": 1, "is_null": 0, "int_value": 0, "bytes_value": null, "start_offset": 9, "end_offset": 14, "body_start": 13, "body_end": 14}
+{"record_ordinal": 0, "record_start": 0, "path": "raw", "type": "OCTET STRING", "mode": "explicit", "present": 1, "is_null": 0, "int_value": null, "bytes_value": "b'\\x00\\x00\\xff\\x00'", "start_offset": 18, "end_offset": 26, "body_start": 22, "body_end": 26}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor", "type": "SEQUENCE", "mode": "implicit", "present": 1, "is_null": 0, "int_value": null, "bytes_value": null, "start_offset": 26, "end_offset": 51, "body_start": null, "body_end": null}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.calibration", "type": "SEQUENCE", "mode": "explicit", "present": 1, "is_null": 0, "int_value": null, "bytes_value": null, "start_offset": 42, "end_offset": 51, "body_start": null, "body_end": null}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.calibration.offset", "type": "INTEGER", "mode": "implicit", "present": 1, "is_null": 0, "int_value": -1, "bytes_value": null, "start_offset": 46, "end_offset": 49, "body_start": 48, "body_end": 49}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.calibration.valid", "type": "NULL", "mode": "implicit", "present": 1, "is_null": 1, "int_value": null, "bytes_value": null, "start_offset": 49, "end_offset": 51, "body_start": null, "body_end": null}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.kind", "type": "INTEGER", "mode": "implicit", "present": 1, "is_null": 0, "int_value": 0, "bytes_value": null, "start_offset": 30, "end_offset": 33, "body_start": 32, "body_end": 33}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.label", "type": "OCTET STRING", "mode": "implicit", "present": 1, "is_null": 0, "int_value": null, "bytes_value": "b'\\x00\\x00'", "start_offset": 33, "end_offset": 37, "body_start": 35, "body_end": 37}
+{"record_ordinal": 0, "record_start": 0, "path": "sensor.quality", "type": "INTEGER", "mode": "explicit", "present": 1, "is_null": 0, "int_value": -128, "bytes_value": null, "start_offset": 37, "end_offset": 42, "body_start": 41, "body_end": 42}
+{"record_ordinal": 0, "record_start": 0, "path": "station_id", "type": "INTEGER", "mode": "implicit", "present": 1, "is_null": 0, "int_value": -1, "bytes_value": null, "start_offset": 2, "end_offset": 5, "body_start": 4, "body_end": 5}
+
+first 12 source ranges:
+{"record_ordinal": 0, "path": "flags", "seq": 0, "role": "encoding", "start_offset": 5, "end_offset": 9}
+{"record_ordinal": 0, "path": "note", "seq": 0, "role": "wrapper", "start_offset": 14, "end_offset": 18}
+{"record_ordinal": 0, "path": "note", "seq": 1, "role": "inner", "start_offset": 16, "end_offset": 18}
+{"record_ordinal": 0, "path": "observed_at", "seq": 0, "role": "encoding", "start_offset": 9, "end_offset": 14}
+{"record_ordinal": 0, "path": "raw", "seq": 0, "role": "wrapper", "start_offset": 18, "end_offset": 26}
+{"record_ordinal": 0, "path": "raw", "seq": 1, "role": "inner", "start_offset": 20, "end_offset": 26}
+{"record_ordinal": 0, "path": "sensor", "seq": 0, "role": "encoding", "start_offset": 26, "end_offset": 51}
+{"record_ordinal": 0, "path": "sensor.calibration", "seq": 0, "role": "wrapper", "start_offset": 42, "end_offset": 51}
+{"record_ordinal": 0, "path": "sensor.calibration", "seq": 1, "role": "inner", "start_offset": 44, "end_offset": 51}
+{"record_ordinal": 0, "path": "sensor.calibration.offset", "seq": 0, "role": "encoding", "start_offset": 46, "end_offset": 49}
+{"record_ordinal": 0, "path": "sensor.calibration.valid", "seq": 0, "role": "encoding", "start_offset": 49, "end_offset": 51}
+{"record_ordinal": 0, "path": "sensor.kind", "seq": 0, "role": "encoding", "start_offset": 30, "end_offset": 33}
+
+presence matches independent expectation: True

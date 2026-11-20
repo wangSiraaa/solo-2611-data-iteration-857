@@ -1,0 +1,369 @@
+{
+  "product_id": "1aec72422754b67ffdcf73d410af535efc1fad29dfdff098be080d0e95fcf3d2",
+  "root": {
+    "fields": [
+      {
+        "depth": 0,
+        "mode": "implicit",
+        "name": "station_id",
+        "optional": false,
+        "ordinal": 0,
+        "path": "station_id",
+        "tag": {
+          "class": "context",
+          "number": 0
+        },
+        "type": "INTEGER",
+        "wire_tag": {
+          "class": "context",
+          "constructed": false,
+          "number": 0
+        }
+      },
+      {
+        "depth": 0,
+        "mode": "implicit",
+        "name": "flags",
+        "optional": true,
+        "ordinal": 1,
+        "path": "flags",
+        "tag": {
+          "class": "context",
+          "number": 1
+        },
+        "type": "OCTET STRING",
+        "wire_tag": {
+          "class": "context",
+          "constructed": false,
+          "number": 1
+        }
+      },
+      {
+        "depth": 0,
+        "mode": "implicit",
+        "name": "observed_at",
+        "optional": false,
+        "ordinal": 2,
+        "path": "observed_at",
+        "tag": {
+          "class": "application",
+          "number": 300
+        },
+        "type": "INTEGER",
+        "wire_tag": {
+          "class": "application",
+          "constructed": false,
+          "number": 300
+        }
+      },
+      {
+        "depth": 0,
+        "mode": "explicit",
+        "name": "note",
+        "optional": true,
+        "ordinal": 3,
+        "path": "note",
+        "tag": {
+          "class": "context",
+          "number": 2
+        },
+        "type": "NULL",
+        "wire_tag": {
+          "class": "context",
+          "constructed": true,
+          "number": 2
+        }
+      },
+      {
+        "depth": 0,
+        "mode": "explicit",
+        "name": "raw",
+        "optional": true,
+        "ordinal": 4,
+        "path": "raw",
+        "tag": {
+          "class": "context",
+          "number": 3
+        },
+        "type": "OCTET STRING",
+        "wire_tag": {
+          "class": "context",
+          "constructed": true,
+          "number": 3
+        }
+      },
+      {
+        "depth": 0,
+        "fields": [
+          {
+            "depth": 1,
+            "mode": "implicit",
+            "name": "kind",
+            "optional": false,
+            "ordinal": 0,
+            "path": "sensor.kind",
+            "tag": {
+              "class": "private",
+              "number": 0
+            },
+            "type": "INTEGER",
+            "wire_tag": {
+              "class": "private",
+              "constructed": false,
+              "number": 0
+            }
+          },
+          {
+            "depth": 1,
+            "mode": "implicit",
+            "name": "label",
+            "optional": true,
+            "ordinal": 1,
+            "path": "sensor.label",
+            "tag": {
+              "class": "private",
+              "number": 1
+            },
+            "type": "OCTET STRING",
+            "wire_tag": {
+              "class": "private",
+              "constructed": false,
+              "number": 1
+            }
+          },
+          {
+            "depth": 1,
+            "mode": "explicit",
+            "name": "quality",
+            "optional": true,
+            "ordinal": 2,
+            "path": "sensor.quality",
+            "tag": {
+              "class": "private",
+              "number": 2
+            },
+            "type": "INTEGER",
+            "wire_tag": {
+              "class": "private",
+              "constructed": true,
+              "number": 2
+            }
+          },
+          {
+            "depth": 1,
+            "fields": [
+              {
+                "depth": 2,
+                "mode": "implicit",
+                "name": "offset",
+                "optional": false,
+                "ordinal": 0,
+                "path": "sensor.calibration.offset",
+                "tag": {
+                  "class": "context",
+                  "number": 10
+                },
+                "type": "INTEGER",
+                "wire_tag": {
+                  "class": "context",
+                  "constructed": false,
+                  "number": 10
+                }
+              },
+              {
+                "depth": 2,
+                "mode": "implicit",
+                "name": "valid",
+                "optional": true,
+                "ordinal": 1,
+                "path": "sensor.calibration.valid",
+                "tag": {
+                  "class": "context",
+                  "number": 11
+                },
+                "type": "NULL",
+                "wire_tag": {
+                  "class": "context",
+                  "constructed": false,
+                  "number": 11
+                }
+              }
+            ],
+            "mode": "explicit",
+            "name": "calibration",
+            "optional": true,
+            "ordinal": 3,
+            "path": "sensor.calibration",
+            "tag": {
+              "class": "private",
+              "number": 3
+            },
+            "type": "SEQUENCE",
+            "wire_tag": {
+              "class": "private",
+              "constructed": true,
+              "number": 3
+            }
+          }
+        ],
+        "mode": "implicit",
+        "name": "sensor",
+        "optional": false,
+        "ordinal": 5,
+        "path": "sensor",
+        "tag": {
+          "class": "application",
+          "number": 1000
+        },
+        "type": "SEQUENCE",
+        "wire_tag": {
+          "class": "application",
+          "constructed": true,
+          "number": 1000
+        }
+      }
+    ],
+    "name": "TelemetryRecord",
+    "tag": {
+      "class": "universal",
+      "number": 16
+    },
+    "type": "SEQUENCE"
+  },
+  "schema": "telemetry.record",
+  "schema_document": {
+    "description": "Telemetry frame directory for the BER subset. Field tags deliberately include a base-128 long tag and both explicit and implicit wrapping.",
+    "root": {
+      "fields": [
+        {
+          "mode": "implicit",
+          "name": "station_id",
+          "tag": {
+            "class": "context",
+            "number": 0
+          },
+          "type": "INTEGER"
+        },
+        {
+          "mode": "implicit",
+          "name": "flags",
+          "optional": true,
+          "tag": {
+            "class": "context",
+            "number": 1
+          },
+          "type": "OCTET STRING"
+        },
+        {
+          "mode": "implicit",
+          "name": "observed_at",
+          "tag": {
+            "class": "application",
+            "number": 300
+          },
+          "type": "INTEGER"
+        },
+        {
+          "mode": "explicit",
+          "name": "note",
+          "optional": true,
+          "tag": {
+            "class": "context",
+            "number": 2
+          },
+          "type": "NULL"
+        },
+        {
+          "mode": "explicit",
+          "name": "raw",
+          "optional": true,
+          "tag": {
+            "class": "context",
+            "number": 3
+          },
+          "type": "OCTET STRING"
+        },
+        {
+          "fields": [
+            {
+              "mode": "implicit",
+              "name": "kind",
+              "tag": {
+                "class": "private",
+                "number": 0
+              },
+              "type": "INTEGER"
+            },
+            {
+              "mode": "implicit",
+              "name": "label",
+              "optional": true,
+              "tag": {
+                "class": "private",
+                "number": 1
+              },
+              "type": "OCTET STRING"
+            },
+            {
+              "mode": "explicit",
+              "name": "quality",
+              "optional": true,
+              "tag": {
+                "class": "private",
+                "number": 2
+              },
+              "type": "INTEGER"
+            },
+            {
+              "fields": [
+                {
+                  "mode": "implicit",
+                  "name": "offset",
+                  "tag": {
+                    "class": "context",
+                    "number": 10
+                  },
+                  "type": "INTEGER"
+                },
+                {
+                  "mode": "implicit",
+                  "name": "valid",
+                  "optional": true,
+                  "tag": {
+                    "class": "context",
+                    "number": 11
+                  },
+                  "type": "NULL"
+                }
+              ],
+              "mode": "explicit",
+              "name": "calibration",
+              "optional": true,
+              "tag": {
+                "class": "private",
+                "number": 3
+              },
+              "type": "SEQUENCE"
+            }
+          ],
+          "mode": "implicit",
+          "name": "sensor",
+          "tag": {
+            "class": "application",
+            "number": 1000
+          },
+          "type": "SEQUENCE"
+        }
+      ],
+      "name": "TelemetryRecord",
+      "tag": {
+        "class": "universal",
+        "number": 16
+      },
+      "type": "SEQUENCE"
+    },
+    "schema": "telemetry.record",
+    "version": 1
+  },
+  "version": 1
+}
