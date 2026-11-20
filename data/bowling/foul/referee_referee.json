@@ -1,0 +1,38 @@
+{
+  "player": "player-1",
+  "description": "player-1, foul+dead",
+  "calls": [
+    {
+      "throw_seq": 1,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 2,
+      "call": "foul"
+    },
+    {
+      "throw_seq": 3,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 4,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 5,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 6,
+      "call": "dead"
+    },
+    {
+      "throw_seq": 7,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 8,
+      "call": "normal"
+    }
+  ]
+}

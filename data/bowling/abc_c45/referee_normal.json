@@ -1,0 +1,18 @@
+{
+  "player": "player-1",
+  "description": "player-1, all normal",
+  "calls": [
+    {
+      "throw_seq": 1,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 2,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 3,
+      "call": "normal"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "player": "player-1",
+  "status": "in_progress",
+  "verification_pending": false,
+  "frames": [
+    {
+      "frame": 1,
+      "balls": [
+        {
+          "throw_seq": 1,
+          "call": "normal",
+          "pins": 4,
+          "uncertain": false
+        },
+        {
+          "throw_seq": 2,
+          "call": "foul",
+          "pins": 0,
+          "uncertain": false
+        }
+      ],
+      "status": "confirmed",
+      "score": 4,
+      "cumulative": 4,
+      "depends_on": [
+        1,
+        2
+      ],
+      "bonus_from": []
+    },
+    {
+      "frame": 2,
+      "balls": [
+        {
+          "throw_seq": 3,
+          "call": "normal",
+          "pins": 10,
+          "uncertain": false
+        }
+      ],
+      "status": "confirmed",
+      "score": 14,
+      "cumulative": 18,
+      "depends_on": [
+        3,
+        4,
+        5
+      ],
+      "bonus_from": [
+        4,
+        5
+      ]
+    },
+    {
+      "frame": 3,
+      "balls": [
+        {
+          "throw_seq": 4,
+          "call": "normal",
+          "pins": 2,
+          "uncertain": false
+        },
+        {
+          "throw_seq": 5,
+          "call": "normal",
+          "pins": 2,
+          "uncertain": false
+        }
+      ],
+      "status": "confirmed",
+      "score": 4,
+      "cumulative": 22,
+      "depends_on": [
+        4,
+        5
+      ],
+      "bonus_from": []
+    },
+    {
+      "frame": 4,
+      "balls": [
+        {
+          "throw_seq": 7,
+          "call": "normal",
+          "pins": 10,
+          "uncertain": false
+        }
+      ],
+      "status": "open_bonus",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [
+        7,
+        8
+      ],
+      "bonus_from": [
+        8
+      ]
+    },
+    {
+      "frame": 5,
+      "balls": [
+        {
+          "throw_seq": 8,
+          "call": "normal",
+          "pins": 3,
+          "uncertain": false
+        }
+      ],
+      "status": "incomplete",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [
+        8
+      ],
+      "bonus_from": []
+    },
+    {
+      "frame": 6,
+      "balls": [],
+      "status": "not_started",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [],
+      "bonus_from": []
+    },
+    {
+      "frame": 7,
+      "balls": [],
+      "status": "not_started",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [],
+      "bonus_from": []
+    },
+    {
+      "frame": 8,
+      "balls": [],
+      "status": "not_started",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [],
+      "bonus_from": []
+    },
+    {
+      "frame": 9,
+      "balls": [],
+      "status": "not_started",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [],
+      "bonus_from": []
+    },
+    {
+      "frame": 10,
+      "balls": [],
+      "status": "not_started",
+      "score": null,
+      "cumulative": null,
+      "depends_on": [],
+      "bonus_from": []
+    }
+  ],
+  "confirmed_frames": [
+    1,
+    2,
+    3
+  ],
+  "pending_verification_frames": [],
+  "unclosed_bonus_frames": [
+    4
+  ],
+  "total": null,
+  "dead_throws": [
+    6
+  ],
+  "uncalled_throws": [],
+  "extra_throws": [],
+  "unassignable_throws": [],
+  "rack_checks": [
+    {
+      "throw_seq": 1,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 2,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 3,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 4,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 5,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 6,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 7,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    },
+    {
+      "throw_seq": 8,
+      "ok": true,
+      "mismatches": [],
+      "unverifiable": []
+    }
+  ],
+  "conflicts": [],
+  "notes": [
+    "per-throw outcomes come only from that throw's observe/settle records; rack records are actual deck setups and are never used as throw evidence"
+  ]
+}

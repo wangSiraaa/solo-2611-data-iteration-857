@@ -1,0 +1,74 @@
+{
+  "player": "player-1",
+  "description": "player-1, full game",
+  "calls": [
+    {
+      "throw_seq": 1,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 2,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 3,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 4,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 5,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 6,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 7,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 8,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 9,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 10,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 11,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 12,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 13,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 14,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 15,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 16,
+      "call": "normal"
+    },
+    {
+      "throw_seq": 17,
+      "call": "normal"
+    }
+  ]
+}

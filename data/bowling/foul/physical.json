@@ -1,0 +1,1663 @@
+{
+  "schema": "bowling.lane.event",
+  "product_id": "7f7b1b372b6f00f8add3b357c97cdd6294be731514009319361bd08fcb26a72b",
+  "import": {
+    "import_id": 1,
+    "product_id": "7f7b1b372b6f00f8add3b357c97cdd6294be731514009319361bd08fcb26a72b",
+    "status": "complete",
+    "record_count": 30,
+    "byte_count": 948,
+    "error_code": null,
+    "error_offset": null,
+    "error_record_start": null
+  },
+  "throws": [
+    {
+      "throw_seq": 1,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 1,
+        "start_offset": 30,
+        "end_offset": 60
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 2,
+            "start_offset": 60,
+            "end_offset": 105
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "confirmed_standing": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 4,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 2,
+      "start_pins": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 4,
+        "start_offset": 126,
+        "end_offset": 156
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 5,
+            "start_offset": 156,
+            "end_offset": 201
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        5,
+        6
+      ],
+      "confirmed_standing": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 2,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 3,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 8,
+        "start_offset": 252,
+        "end_offset": 282
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 9,
+            "start_offset": 282,
+            "end_offset": 327
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "confirmed_standing": [],
+      "undetermined": [],
+      "fall_count": 10,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 4,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 12,
+        "start_offset": 378,
+        "end_offset": 408
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 13,
+            "start_offset": 408,
+            "end_offset": 453
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1,
+        2
+      ],
+      "confirmed_standing": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 2,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 5,
+      "start_pins": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 15,
+        "start_offset": 474,
+        "end_offset": 504
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 0,
+          "state": "empty",
+          "source": null,
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 16,
+            "start_offset": 504,
+            "end_offset": 549
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        3,
+        4
+      ],
+      "confirmed_standing": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 2,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 6,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 19,
+        "start_offset": 600,
+        "end_offset": 630
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 20,
+            "start_offset": 630,
+            "end_offset": 675
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1
+      ],
+      "confirmed_standing": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 1,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 7,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 23,
+        "start_offset": 726,
+        "end_offset": 756
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 24,
+            "start_offset": 756,
+            "end_offset": 801
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "confirmed_standing": [],
+      "undetermined": [],
+      "fall_count": 10,
+      "contradictions": []
+    },
+    {
+      "throw_seq": 8,
+      "start_pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "start_source": {
+        "record_ordinal": 27,
+        "start_offset": 852,
+        "end_offset": 882
+      },
+      "observations": [
+        {
+          "obs_seq": 1,
+          "mask": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "standing": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "final": true,
+          "source": {
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          }
+        }
+      ],
+      "settled": true,
+      "positions": [
+        {
+          "pin": 1,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 2,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 3,
+          "started": 1,
+          "state": "down",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 4,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 5,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 6,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 7,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 8,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 9,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        },
+        {
+          "pin": 10,
+          "started": 1,
+          "state": "standing",
+          "source": {
+            "obs_seq": 1,
+            "record_ordinal": 28,
+            "start_offset": 882,
+            "end_offset": 927
+          },
+          "note": null
+        }
+      ],
+      "confirmed_down": [
+        1,
+        2,
+        3
+      ],
+      "confirmed_standing": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "undetermined": [],
+      "fall_count": 3,
+      "contradictions": []
+    }
+  ],
+  "racks": [
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 0,
+      "source": {
+        "record_ordinal": 0,
+        "start_offset": 0,
+        "end_offset": 30
+      }
+    },
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 1,
+      "source": {
+        "record_ordinal": 7,
+        "start_offset": 222,
+        "end_offset": 252
+      }
+    },
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 1,
+      "source": {
+        "record_ordinal": 11,
+        "start_offset": 348,
+        "end_offset": 378
+      }
+    },
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 1,
+      "source": {
+        "record_ordinal": 18,
+        "start_offset": 570,
+        "end_offset": 600
+      }
+    },
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 2,
+      "source": {
+        "record_ordinal": 22,
+        "start_offset": 696,
+        "end_offset": 726
+      }
+    },
+    {
+      "pins": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reason": 1,
+      "source": {
+        "record_ordinal": 26,
+        "start_offset": 822,
+        "end_offset": 852
+      }
+    }
+  ],
+  "orphan_events": [],
+  "log_issues": [],
+  "evidence_rule": "per-throw outcomes come only from that throw's observe/settle records; rack records are actual deck setups and are never used as throw evidence"
+}

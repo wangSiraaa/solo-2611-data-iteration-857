@@ -174,3 +174,59 @@ Coverage highlights (`tests/`):
 * `test_demo_truth.py` — checks the demo's relation table against an
   independently derived presence map and byte ranges;
 * `test_scale.py` — depth 32, 100 MiB stream, 2 MiB body cap (opt-in).
+* `test_bowling.py` — the bowling application below: per-throw physical
+  records, referee-sheet replay, rack rules, contradictions, old/new format
+  coexistence in one repository.
+
+## Application: ten-pin lane log and referee replay (`bowling/`)
+
+An offline ten-pin lane pipeline built on the repository above; no network
+or video recognition is involved.  The lane emits mechanical events as TLV
+records under `schemas/bowling_lane_v1.json` (one record per event):
+
+* `rack` — an actual deck setup between throws (initial, re-rack, re-spot,
+  removal), ten fixed positions;
+* `throw_start` — the actual ten-position deck when a throw begins;
+* `observe` — a quiet-moment partial probe: a mask of positions looked at
+  and which of those still stand (unseen positions stay unknown);
+* `settle` — declares which observation ids were taken at the final stable
+  state; final probes may be fragmented and are cross-checked where they
+  overlap.
+
+`bowling.physical` reduces the imported facts to a **per-throw physical
+record**: for each starting position, confirmed down / confirmed standing /
+undecidable, each with its source record and byte offsets.  A fallen pin can
+never stand back up within a throw; "standing" is only confirmed by probes
+the settlement declares final.  Contradictions (re-standing pins, disagreeing
+final fragments, settlements naming unknown observations, throw/rack
+mismatches) are reported per throw.  Rack records are kept as their own
+actual setups and are **never** used as throw evidence — a later full
+re-rack cannot silently complete the previous throw's evidence.
+
+`bowling.replay` reads the physical record plus a separately kept referee
+sheet (physical throw number → `normal`/`foul`/`dead`) and produces the
+ten-frame result: confirmed scores, unclosed bonuses, frames marked
+`pending_verification` when a normal throw they depend on has undetermined
+falls, and the confirmable historical frames.  Fouls occupy a ball and score
+zero (pins re-spotted); dead balls occupy no slot and grant no bonus (deck
+restored).  Consecutive racks are checked against the rule-required decks,
+including re-spot after fouls, restoration after dead balls and fresh full
+racks after strikes.  Match status is one of `complete`, `in_progress` or
+`conflict`; incomplete games and extra throws are identified.  The match
+record accepts exactly one player.
+
+```bash
+python3 -m bowling.demo data/bowling            # all scenarios, writes artifacts
+python3 -m bowling.cli ingest lane.bin --db lane.sqlite
+python3 -m bowling.cli physical lane.sqlite -o physical.json
+python3 -m bowling.cli replay physical.json referee.json
+```
+
+The demo builds real input streams, ingests them, **reopens** the repository
+and replays two referee sheets from the reopened physical record: full rack,
+A downs all ten, re-rack, B downs 1-3, C downs 4-7 — all normal gives frame 1
+= 17; judging A a dead ball gives 7; with C's evidence and actual falls
+changed to pins 4,5 only, the original sheet gives 15.  Further scenarios
+cover a complete ten-frame game (total 183), a foul with re-spot plus a dead
+ball with restoration, and a probe that misses one pin position (dependent
+frame pending verification, earlier frames confirmable).

@@ -1,0 +1,128 @@
+{
+  "schema": "bowling.lane.event",
+  "version": 1,
+  "description": "Ten-pin lane mechanical event log. One top-level record per lane event. kind: 1=rack (actual pin deck setup between throws), 2=throw_start (actual ten-position deck when the throw begins), 3=observe (quiet-moment partial probe: mask of positions looked at, and which of those still stand), 4=settle (declares which observation ids were taken at the final stable state). Pin positions are fixed, 1..10, carried as 10-octet strings with 1=standing/occupied and 0=empty/down.",
+  "root": {
+    "name": "LaneEvent",
+    "tag": {"class": "universal", "number": 16},
+    "type": "SEQUENCE",
+    "fields": [
+      {
+        "name": "event_seq",
+        "tag": {"class": "context", "number": 0},
+        "mode": "implicit",
+        "type": "INTEGER"
+      },
+      {
+        "name": "kind",
+        "tag": {"class": "context", "number": 1},
+        "mode": "implicit",
+        "type": "INTEGER"
+      },
+      {
+        "name": "lane",
+        "tag": {"class": "context", "number": 2},
+        "mode": "implicit",
+        "type": "INTEGER",
+        "optional": true
+      },
+      {
+        "name": "rack",
+        "tag": {"class": "context", "number": 3},
+        "mode": "explicit",
+        "type": "SEQUENCE",
+        "optional": true,
+        "fields": [
+          {
+            "name": "pins",
+            "tag": {"class": "context", "number": 0},
+            "mode": "implicit",
+            "type": "OCTET STRING"
+          },
+          {
+            "name": "reason",
+            "tag": {"class": "context", "number": 1},
+            "mode": "implicit",
+            "type": "INTEGER",
+            "optional": true
+          }
+        ]
+      },
+      {
+        "name": "throw",
+        "tag": {"class": "context", "number": 4},
+        "mode": "explicit",
+        "type": "SEQUENCE",
+        "optional": true,
+        "fields": [
+          {
+            "name": "throw_seq",
+            "tag": {"class": "context", "number": 0},
+            "mode": "implicit",
+            "type": "INTEGER"
+          },
+          {
+            "name": "pins",
+            "tag": {"class": "context", "number": 1},
+            "mode": "implicit",
+            "type": "OCTET STRING"
+          }
+        ]
+      },
+      {
+        "name": "observe",
+        "tag": {"class": "context", "number": 5},
+        "mode": "explicit",
+        "type": "SEQUENCE",
+        "optional": true,
+        "fields": [
+          {
+            "name": "throw_seq",
+            "tag": {"class": "context", "number": 0},
+            "mode": "implicit",
+            "type": "INTEGER"
+          },
+          {
+            "name": "obs_seq",
+            "tag": {"class": "context", "number": 1},
+            "mode": "implicit",
+            "type": "INTEGER"
+          },
+          {
+            "name": "mask",
+            "tag": {"class": "context", "number": 2},
+            "mode": "implicit",
+            "type": "OCTET STRING"
+          },
+          {
+            "name": "standing",
+            "tag": {"class": "context", "number": 3},
+            "mode": "implicit",
+            "type": "OCTET STRING"
+          }
+        ]
+      },
+      {
+        "name": "settle",
+        "tag": {"class": "context", "number": 6},
+        "mode": "explicit",
+        "type": "SEQUENCE",
+        "optional": true,
+        "fields": [
+          {
+            "name": "throw_seq",
+            "tag": {"class": "context", "number": 0},
+            "mode": "implicit",
+            "type": "INTEGER"
+          },
+          {
+            "name": "final_obs",
+            "tag": {"class": "context", "number": 1},
+            "mode": "implicit",
+            "type": "OCTET STRING"
+          }
+        ]
+      }
+    ]
+  }
+}
